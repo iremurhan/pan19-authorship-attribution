@@ -1,0 +1,10 @@
+data/
+answers/
+pan19-*/
+*.zip
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store

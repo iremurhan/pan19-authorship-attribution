@@ -1,0 +1,5 @@
+numpy>=1.24
+scikit-learn>=1.3
+nltk>=3.8        # stemming; POS tagging for --pos-sentiment
+textblob>=0.17   # sentiment for --pos-sentiment
+pytest>=8.0
