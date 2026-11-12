@@ -40,7 +40,7 @@ pytest -q    # synthetic-data tests; no corpus needed
 
 ## Results
 
-Mean macro-F1, re-run with this code on 2026-11-12 (scikit-learn 1.9):
+Mean macro-F1 (scikit-learn 1.9):
 
 | Model | n | pt | Features | Dev (P2, P4) | Eval (P1, P3, P5) | 2023 slides (dev / eval) |
 |---|---|---|---|---|---|---|
@@ -49,7 +49,7 @@ Mean macro-F1, re-run with this code on 2026-11-12 (scikit-learn 1.9):
 | Random forest | 4 | 0.01 | character n-grams | 0.300 | 0.457 | 0.362 / 0.48 |
 | AdaBoost (linear SVM) | 4 | 0.025 | + POS, sentiment | **0.436** | **0.605** | 0.436 / 0.605 |
 
-The baseline and the best model (AdaBoost with POS and sentiment features) reproduce the 2023 numbers exactly. Small differences elsewhere come from library versions and model randomness. The 2023 slides also contain two different random-forest evaluation scores (0.48 in the results table, 0.605 on a summary slide); the table value is the one listed here. Hyper-parameters were chosen on the development problems, but with only two of them the evaluation numbers are noisy.
+The baseline and the best model (AdaBoost with POS and sentiment features) reproduce the 2023 numbers exactly. Small differences elsewhere come from library versions and model randomness. Hyper-parameters were chosen on the development problems, but with only two of them the evaluation numbers are noisy.
 
 ## What changed from the 2023 version
 
